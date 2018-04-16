@@ -68,7 +68,7 @@ class Wbl_WC_Product_Request {
 			add_action( 'admin_notices', function(){
 					?>
 					<div class="notice-error notice is-dismissible">
-						<p><b>WooCommerce Product Request: </b><?php esc_html_e( 'please activate WooCommerce first to start working!', 'WBL_WC_PRODUCT_REQUEST_DOMAIN' ); ?></p>
+						<p><b>WooCommerce Product Request: </b><?php esc_html_e( 'please activate WooCommerce first to start working!', 'woocommerce-product-request' ); ?></p>
 					</div>
 					<?php
 			} );

@@ -29,20 +29,20 @@ class Wbl_WC_Product_Request_Post_Type extends Wbl_WC_Product_Request {
 	function register_post_type() {
 
 		$labels = array(
-			'name'               	=> __( 'Product Requests', 'post type general name', 	WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'singular_name'      	=> __( 'Product Request', 'post type singular name', 	WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'menu_name'          	=> __( 'Product Requests', 'admin menu', 				WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'name_admin_bar'     	=> __( 'Product Request', 'add new on admin bar', 		WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'add_new'            	=> __( 'Add New', 'Request', 							WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'add_new_item'       	=> __( 'Add New Request',								WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'new_item'           	=> __( 'New Request', 									WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'edit_item'          	=> __( 'Edit Request', 									WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'view_item'          	=> __( 'View Request', 									WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'all_items'          	=> __( 'All Requests', 									WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'search_items'       	=> __( 'Search Request', 								WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'parent_item_colon'  	=> __( 'Parent Request', 								WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'not_found'          	=> __( 'No product requests found.',					WBL_WC_PRODUCT_REQUEST_DOMAIN ),
-			'not_found_in_trash'	=> __( 'No product requests found in Trash.',			WBL_WC_PRODUCT_REQUEST_DOMAIN ),
+			'name'               	=> __( 'Product Requests', 'post type general name', 	'woocommerce-product-request' ),
+			'singular_name'      	=> __( 'Product Request', 'post type singular name', 	'woocommerce-product-request' ),
+			'menu_name'          	=> __( 'Product Requests', 'admin menu', 				'woocommerce-product-request' ),
+			'name_admin_bar'     	=> __( 'Product Request', 'add new on admin bar', 		'woocommerce-product-request' ),
+			'add_new'            	=> __( 'Add New', 'Request', 							'woocommerce-product-request' ),
+			'add_new_item'       	=> __( 'Add New Request',								'woocommerce-product-request' ),
+			'new_item'           	=> __( 'New Request', 									'woocommerce-product-request' ),
+			'edit_item'          	=> __( 'Edit Request', 									'woocommerce-product-request' ),
+			'view_item'          	=> __( 'View Request', 									'woocommerce-product-request' ),
+			'all_items'          	=> __( 'All Requests', 									'woocommerce-product-request' ),
+			'search_items'       	=> __( 'Search Request', 								'woocommerce-product-request' ),
+			'parent_item_colon'  	=> __( 'Parent Request', 								'woocommerce-product-request' ),
+			'not_found'          	=> __( 'No product requests found.',					'woocommerce-product-request' ),
+			'not_found_in_trash'	=> __( 'No product requests found in Trash.',			'woocommerce-product-request' ),
 		);
 
 		$args = array(

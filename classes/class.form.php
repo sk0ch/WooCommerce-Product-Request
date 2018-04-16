@@ -51,7 +51,7 @@ class Wbl_WC_Product_Request_Form extends Wbl_WC_Product_Request {
 		$settings = self::get_settings();
 
 		// Set button text
-		$button_text = ! empty( $settings['button_text'] ) ? $settings['button_text'] : esc_html__( 'Call me', WBL_WC_PRODUCT_REQUEST_DOMAIN );
+		$button_text = ! empty( $settings['button_text'] ) ? $settings['button_text'] : esc_html__( 'Call me', 'woocommerce-product-request' );
 
 		// Show button
 		echo '<a href="#" class="wbl_cm_show">' . esc_html( $button_text ) . '</a>';
@@ -68,26 +68,26 @@ class Wbl_WC_Product_Request_Form extends Wbl_WC_Product_Request {
 
 						<?php wp_nonce_field( 'wbl_call_me_form' , 'wbl_call_me_form_nonce_field' ); ?>
 
-						<h1><?php esc_html_e( 'Call me', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?><span class="wbl_cm_close dashicons dashicons-no"></span></h1>
+						<h1><?php esc_html_e( 'Call me', 'woocommerce-product-request' ); ?><span class="wbl_cm_close dashicons dashicons-no"></span></h1>
 
-						<label for="wbl_cm_name"><?php esc_html_e( 'Name', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></label>
+						<label for="wbl_cm_name"><?php esc_html_e( 'Name', 'woocommerce-product-request' ); ?></label>
 						<input type="text" id="wbl_cm_name" required/>
 
-						<label for="wbl_cm_phone"><?php esc_html_e( 'Phone', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></label>
+						<label for="wbl_cm_phone"><?php esc_html_e( 'Phone', 'woocommerce-product-request' ); ?></label>
 						<input type="tel" id="wbl_cm_phone" required/>
 
-						<a href="#" class="wbl_toggle"><?php esc_html_e( 'Add comment', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></a>
+						<a href="#" class="wbl_toggle"><?php esc_html_e( 'Add comment', 'woocommerce-product-request' ); ?></a>
 
 						<div class="wbl_cm_comment_toggle">
 
-							<label for="wbl_cm_comment"><?php esc_html_e( 'Comment', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></label>
+							<label for="wbl_cm_comment"><?php esc_html_e( 'Comment', 'woocommerce-product-request' ); ?></label>
 
 							<textarea id="wbl_cm_comment" rows="10"></textarea>
 
 						</div>
 
-						<input class="wbl_cm_submit" type="submit" value="<?php esc_html_e( 'Submit', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?>"/>
-						<span class="wbl_cm_success hide"><?php esc_html_e( 'Your request has been sent', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></span>
+						<input class="wbl_cm_submit" type="submit" value="<?php esc_html_e( 'Submit', 'woocommerce-product-request' ); ?>"/>
+						<span class="wbl_cm_success hide"><?php esc_html_e( 'Your request has been sent', 'woocommerce-product-request' ); ?></span>
 						<img class="wbl_cm_loader hide" src="<?php echo esc_url( WBL_WC_PRODUCT_REQUEST_URL ); ?>/dist/media/gear.svg"/>
 						<?php wp_nonce_field( 'webolatory_save_settings', 'webolatory_save_settings_nonce_field' ); ?>
 
@@ -266,13 +266,13 @@ class Wbl_WC_Product_Request_Form extends Wbl_WC_Product_Request {
 					<p><b>%s</b> %s</p>
 					<p><b>%s</b> <a href="%s">%s</a></p>
 				</div>',
-				esc_html__( 'Client name: ', WBL_WC_PRODUCT_REQUEST_DOMAIN ),
+				esc_html__( 'Client name: ', 'woocommerce-product-request' ),
 				esc_html( $data['name'] ),
-				esc_html__( 'Client phone: ', WBL_WC_PRODUCT_REQUEST_DOMAIN ),
+				esc_html__( 'Client phone: ', 'woocommerce-product-request' ),
 				esc_html( $data['phone'] ),
-				esc_html__( 'Client comment: ', WBL_WC_PRODUCT_REQUEST_DOMAIN ),
+				esc_html__( 'Client comment: ', 'woocommerce-product-request' ),
 				esc_html( $data['comment'] ),
-				esc_html__( 'Product: ', WBL_WC_PRODUCT_REQUEST_DOMAIN ),
+				esc_html__( 'Product: ', 'woocommerce-product-request' ),
 				esc_url( get_permalink( $product->ID ) ),
 				esc_html( $product->post_title )
 			);

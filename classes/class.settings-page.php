@@ -95,12 +95,12 @@ class Wbl_WC_Product_Request_Setting_Page extends Wbl_WC_Product_Request {
 
 							<?php wp_nonce_field( 'WBL_WC_PRODUCT_REQUEST_save_settings' , 'WBL_WC_PRODUCT_REQUEST_save_settings_nonce_field' ); ?>
 
-							<h1><?php esc_html_e( 'General settings', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></h1>
+							<h1><?php esc_html_e( 'General settings', 'woocommerce-product-request' ); ?></h1>
 
 							<div class="wbl_subsection">
 
 								<div class="wbl_left">
-									<h3><?php esc_html_e( 'Enable module', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></h3>
+									<h3><?php esc_html_e( 'Enable module', 'woocommerce-product-request' ); ?></h3>
 								</div>
 
 								<div class="wbl_right">
@@ -116,11 +116,11 @@ class Wbl_WC_Product_Request_Setting_Page extends Wbl_WC_Product_Request {
 							<div class="wbl_subsection">
 
 								<div class="wbl_left">
-									<h3><?php esc_html_e( 'Button text', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></h3>
+									<h3><?php esc_html_e( 'Button text', 'woocommerce-product-request' ); ?></h3>
 								</div>
 
 								<div class="wbl_right">
-									<input type="text" name="wc-call-me[button_text]" placeholder="<?php esc_html_e( 'Call me', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?>" value="<?php echo esc_html( $settings['button_text'] ); ?>">
+									<input type="text" name="wc-call-me[button_text]" placeholder="<?php esc_html_e( 'Call me', 'woocommerce-product-request' ); ?>" value="<?php echo esc_html( $settings['button_text'] ); ?>">
 								</div>
 
 							</div>
@@ -128,7 +128,7 @@ class Wbl_WC_Product_Request_Setting_Page extends Wbl_WC_Product_Request {
 							<div class="wbl_subsection">
 
 								<div class="wbl_left">
-									<h3><?php esc_html_e( 'Button position', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></h3>
+									<h3><?php esc_html_e( 'Button position', 'woocommerce-product-request' ); ?></h3>
 								</div>
 
 								<div class="wbl_right">
@@ -147,12 +147,12 @@ class Wbl_WC_Product_Request_Setting_Page extends Wbl_WC_Product_Request {
 
 							</div>
 
-							<h1><?php esc_html_e( 'Uninstall settings', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></h1>
+							<h1><?php esc_html_e( 'Uninstall settings', 'woocommerce-product-request' ); ?></h1>
 
 							<div class="wbl_subsection">
 
 								<div class="wbl_left">
-									<h3><?php esc_html_e( 'Remove module settings', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></h3>
+									<h3><?php esc_html_e( 'Remove module settings', 'woocommerce-product-request' ); ?></h3>
 								</div>
 
 								<div class="wbl_right">
@@ -168,7 +168,7 @@ class Wbl_WC_Product_Request_Setting_Page extends Wbl_WC_Product_Request {
 							<div class="wbl_subsection">
 
 								<div class="wbl_left">
-									<h3><?php esc_html_e( 'Remove all product requests', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?></h3>
+									<h3><?php esc_html_e( 'Remove all product requests', 'woocommerce-product-request' ); ?></h3>
 								</div>
 
 								<div class="wbl_right">
@@ -182,7 +182,7 @@ class Wbl_WC_Product_Request_Setting_Page extends Wbl_WC_Product_Request {
 							</div>
 
 							<p>
-								<input type="submit" value="<?php esc_html_e( 'Save', WBL_WC_PRODUCT_REQUEST_DOMAIN ); ?>" name="wc-call-me-save-settings" class="wbl_button small green">
+								<input type="submit" value="<?php esc_html_e( 'Save', 'woocommerce-product-request' ); ?>" name="wc-call-me-save-settings" class="wbl_button small green">
 							</p>
 						</form>
 

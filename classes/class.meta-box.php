@@ -34,7 +34,7 @@ class Wbl_WC_Product_Request_Box extends Wbl_WC_Product_Request {
 			return false;
 		}
 
-		add_meta_box( 'call_me_meta_box', esc_html__( 'Form data', WBL_WC_PRODUCT_REQUEST_DOMAIN ), array( &$this, 'show_meta_box' ), '', 'normal', 'high' );
+		add_meta_box( 'call_me_meta_box', esc_html__( 'Form data', 'woocommerce-product-request' ), array( &$this, 'show_meta_box' ), '', 'normal', 'high' );
 
 		return null;
 	}
@@ -68,7 +68,7 @@ class Wbl_WC_Product_Request_Box extends Wbl_WC_Product_Request {
 								%s: <a href="%s">%s</a>
 							</div>
 							',
-							esc_html__( 'Product', WBL_WC_PRODUCT_REQUEST_DOMAIN ),
+							esc_html__( 'Product', 'woocommerce-product-request' ),
 							esc_url( get_permalink( $value ) ),
 							esc_html( get_the_title( $value ) )
 						);
@@ -83,7 +83,7 @@ class Wbl_WC_Product_Request_Box extends Wbl_WC_Product_Request {
 								<b style="text-transform:capitalize;">%s</b>: %s
 							</div>
 							',
-							esc_html__( $key, WBL_WC_PRODUCT_REQUEST_DOMAIN ),
+							esc_html__( $key, 'woocommerce-product-request' ),
 							esc_html( $value )
 						);
 
